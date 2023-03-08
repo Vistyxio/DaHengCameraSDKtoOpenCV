@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<opencv_storage>
+
+<!---------------AngleSolve类配置--------------->
+<!--负责人：Song-->
+
+<!--相机内参矩阵-->
+<!--步兵320.6155554513048,275.6295699158438-->
+<camera_matrix type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>f</dt>
+  <data>
+     1340.374879457501          0                353.6155554513048
+       0                    1315.145145389308 	261.6295699158438
+       0                       0                  1
+	</data></camera_matrix>
+	
+<!--相机畸变矩阵-->
+<dist_coeffs type_id="opencv-matrix">
+  <rows>1</rows>
+  <cols>5</cols>
+  <dt>f</dt>
+  <data>
+    0.05887197922785756	0.6241536959526282	0.01078284618062011	0.004687715411934826	-62.11807567939946
+	</data></dist_coeffs>
+	
+<!--KF测量噪声方差矩阵-->
+<measurementNoiseCovKF type_id="opencv-matrix">
+  <rows>2</rows>
+  <cols>2</cols>
+  <dt>f</dt>
+  <data>
+    1e-5	0
+	0		1e-5
+	</data></measurementNoiseCovKF>
+	
+<!--KF过程噪声方差矩阵-->
+<processNoiseCovKF type_id="opencv-matrix">
+  <rows>4</rows>
+  <cols>4</cols>
+  <dt>f</dt>
+  <data>
+    1e-5	0		0		0
+	0		1e-5	0		0
+	0		0		1e-5	0
+	0  		0		0		1e-5
+	</data></processNoiseCovKF>
+	
+<!--EKF测量噪声方差矩阵-->
+<measurementNoiseCovEKF type_id="opencv-matrix">
+  <rows>2</rows>
+  <cols>2</cols>
+  <dt>f</dt>
+  <data>
+    1e-5	0
+	0		1e-5
+	</data></measurementNoiseCovEKF>
+	
+<!--EKF过程噪声方差矩阵-->
+<processNoiseCovEKF type_id="opencv-matrix">
+  <rows>4</rows>
+  <cols>4</cols>
+  <dt>f</dt>
+  <data>
+    1e-3	0		0		0
+	0		1e-5	0		0
+	0		0		1e-5	0
+	0  		0		0		1e-5
+	</data></processNoiseCovEKF>
+	
+<!--击打目标在图像上的目标像素坐标-->
+<target_point>
+	320	240
+	</target_point>
+	
+<!--PnP角度解算小装甲板三维坐标-->
+<aomor3d_small>
+	-107		79		0
+	107		79		0
+	107		-79		0
+	-107		-79		0
+	</aomor3d_small>
+
+<!--PnP角度解算大装甲板三维坐标-->
+<aomor3d_big>
+	1		2		0
+	4		5		0
+	7		8		0
+	10		11		0
+	</aomor3d_big>
+
+<!--相机坐标系原点在云台坐标系的三维坐标-->
+<camera3d>
+<!--步兵 20 -55 121-->
+<!--哨兵 0 25 130-->
+<!--英雄0 -85 220-->
+0 40 30
+	</camera3d>
+
+
+<!--------------SDK二次开发配置--------------->
+<!--负责人：Su-->
+
+<!--曝光时间-->
+<dExposureValue>5000.0</dExposureValue>
+
+<!--增益通道-->
+<GainMode>GX_GAIN_SELECTOR_ALL</GainMode>
+
+<!--增益值-->
+<dGainValue>0.0</dGainValue>
+
+<!--白平衡系数R-->
+<dBalanceRatioValueR>4.0</dBalanceRatioValueR>
+
+<!--白平衡系数G-->
+<dBalanceRatioValueG>1.0</dBalanceRatioValueG>
+
+<!--白平衡系数B-->
+<dBalanceRatioValueB>3.0</dBalanceRatioValueB>
+
+</opencv_storage>
